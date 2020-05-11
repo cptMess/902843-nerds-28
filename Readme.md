@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Капитан Бардак](https://up.htmlacademy.ru/htmlcss/28/user/902843).
-* Наставник: `Неизвестно`.
+- Студент: [Капитан Бардак](https://up.htmlacademy.ru/htmlcss/28/user/902843).
+- Наставник: [Владислав Кривокора](https://htmlacademy.ru/profile/krivokora).
 
 ---
 
