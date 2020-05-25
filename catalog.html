@@ -24,11 +24,22 @@
   </header>
   <main>
     <section>
-      <h3>сетка</h3>
-      <select name="grid" id="" multiple>
-        <option value=""></option>
-      </select>
-      <h3>особенности</h3>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>Стоимость:</p>
+        <input type="range" min="0" max="20000" step="1" value="15000">
+      </form>
+      <p>Сетка</p>
+      <p><input type="radio" name="grid" value="adaptive" checked>Адаптивная</p>
+      <p><input type="radio" name="grid" value="fixed">Фиксированная</p>
+      <p><input type="radio" name="grid" value="rubber">Резиновая</p>
+      <p>Особенности</p>
+      <p><input type="checkbox" name="features" value="slider" checked>Слайдер</p>
+      <p><input type="checkbox" name="features" value="advantages">Блок преимуществ</p>
+      <p><input type="checkbox" name="features" value="news" checked>Новости</p>
+      <p><input type="checkbox" name="features" value="gallery">Галерея</p>
+      <p><input type="checkbox" name="features" value="basket">Корзина</p>
+      <p><input type="submit" value="Показать"></p>
+      </form>
     </section>
     <section>
       <ul>
