@@ -10,7 +10,7 @@
   <header>
     <nav>
       <a href="index.html">
-        <img src="img/Нёрдс лого.png" width="159.87" height="65.02" alt="Логотип студии Нердс" />
+        <img src="img/nerds_logo.png" width="159.87" height="65.02" alt="Логотип студии Нердс" />
       </a>
       <ul>
         <li><a href="">Студия</a></li>
@@ -23,30 +23,44 @@
     <h1>Магазин готовых шаблонов</h1>
   </header>
   <main>
-
     <section>
-      <div>
-        <img src="img/магазин седона.jpg" width="360" height="580" alt="">
-      </div>
-      <div>
-        <img src="img/магазин пинк.jpg" width="360" height="580" alt="">
-      </div>
-      <div>
-        <img src="img/магазин бородист.jpg" width="360" height="580" alt="">
-      </div>
-      <div>
-        <img src="img/магазин мишка.jpg" width="360" height="580" alt="">
-      </div>
-      <div>
-        <img src="img/магазин а+.jpg.jpg" width="360" height="580" alt="">
-      </div>
-      <div>
-        <img src="img/магазин кваст.jpg.jpg" width="360" height="580" alt="">
-      </div>
+      <h3>сетка</h3>
+      <select name="grid" id="" multiple>
+        <option value=""></option>
+      </select>
+      <h3>особенности</h3>
+    </section>
+    <section>
+      <ul>
+        <li><img src="img/catalog_sedona.jpg" width="360" height="580" alt="карточка товара"></li>
+        <li><img src="img/catalog_pink.jpg" width="360" height="580" alt="карточка товара"></li>
+        <li><img src="img/catalog_barber.jpg" width="360" height="580" alt="карточка товара"></li>
+        <li><img src="img/catalog bear.jpg" width="360" height="580" alt="карточка товара"></li>
+        <li><img src="img/catalog a+.jpg" width="360" height="580" alt="карточка товара"></li>
+        <li><img src="img/catalog_kvast.jpg" width="360" height="580" alt="карточка товара"></li>
+      </ul>
     </section>
   </main>
   <footer>
     <section>
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user_email">Ваш e-mail</label>
+          <input type="text" id="user_email" name="user_email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="message_text">Текст письма</label>
+          <input type="text" id="message_text" name="message_text" placeholder="В свободной форме">
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+    <div>
       <ul>
         <li>
           <img src="" width="81" height="81" alt="вк">
@@ -60,7 +74,7 @@
       </ul>
       <h2>Давайте дружить, это выгодно!</h2>
       <p>Скидка 10% для друзей из социальных сетей.</p>
-    </section>
+    </div>
   </footer>
 </body>
 
