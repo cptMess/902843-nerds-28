@@ -4,89 +4,122 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="index.html">
-        <img src="img/nerds_logo.png" width="159.87" height="65.02" alt="Логотип студии Нердс" />
-      </a>
-      <ul>
+  <header class="main-header">
+    <a class="main-logo" href="index.html">
+      <img src="img/nerds_logo.png" width="159.87" height="65.02" alt="Логотип студии Нердс">
+    </a>
+    </div>
+    <nav class="main-navigation">
+      <ul class="main-navigation-list">
         <li><a href="">Студия</a></li>
         <li><a href="">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="">Контакты</a></li>
+        <li><a href="">Корзина</a></li>
       </ul>
-      <a href="">Корзина</a>
     </nav>
-    <h1>Магазин готовых шаблонов</h1>
+    <h1>магазин готовых шаблонов</h1>
   </header>
   <main>
     <section>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>Стоимость:</p>
-        <input type="range" min="0" max="20000" step="1" value="15000">
-      </form>
-      <p>Сетка</p>
-      <p><input type="radio" name="grid" value="adaptive" checked>Адаптивная</p>
-      <p><input type="radio" name="grid" value="fixed">Фиксированная</p>
-      <p><input type="radio" name="grid" value="rubber">Резиновая</p>
-      <p>Особенности</p>
-      <p><input type="checkbox" name="features" value="slider" checked>Слайдер</p>
-      <p><input type="checkbox" name="features" value="advantages">Блок преимуществ</p>
-      <p><input type="checkbox" name="features" value="news" checked>Новости</p>
-      <p><input type="checkbox" name="features" value="gallery">Галерея</p>
-      <p><input type="checkbox" name="features" value="basket">Корзина</p>
-      <p><input type="submit" value="Показать"></p>
-      </form>
-    </section>
-    <section>
-      <ul>
-        <li><img src="img/catalog_sedona.jpg" width="360" height="580" alt="карточка товара"></li>
-        <li><img src="img/catalog_pink.jpg" width="360" height="580" alt="карточка товара"></li>
-        <li><img src="img/catalog_barber.jpg" width="360" height="580" alt="карточка товара"></li>
-        <li><img src="img/catalog bear.jpg" width="360" height="580" alt="карточка товара"></li>
-        <li><img src="img/catalog a+.jpg" width="360" height="580" alt="карточка товара"></li>
-        <li><img src="img/catalog_kvast.jpg" width="360" height="580" alt="карточка товара"></li>
-      </ul>
+      <div class="choose">
+        <form action="https://echo.htmlacademy.ru" method="post">
+
+          <p>Стоимость:</p>
+          <input type="range" min="0" max="20000" step="1" value="15000">
+          <div class="price-controls">
+            <label class="min-price">ОТ<input name="min-price" type="text" value="0"></label>
+            <label class="max-price">ДО<input name="max-price" type="text" value="15000"></label>
+          </div>
+          <h3>Сетка</h3>
+          <ul class="choose radio-li">
+            <li>
+              <input id="adaptive" type="radio" name="grid" value="adaptive" checked>
+              <label for="adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input id="fixed" type="radio" name="grid" value="fixed">
+              <label for="fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input id="rubber" type="radio" name="grid" value="rubber">
+              <label for="rubber">Резиновая</label>
+            </li>
+          </ul>
+
+          <h3>Особенности</h3>
+          <ul class="choose checkbox-li">
+            <li>
+              <input id="slider" type="checkbox" name="features" value="slider" checked>
+              <label for="slider">Слайдер</label>
+            </li>
+            <li>
+              <input id="advantages" type="checkbox" name="features" value="advantages">
+              <label for="advantages">Блок преимуществ</label>
+            </li>
+            <li>
+              <input id="news" type="checkbox" name="features" value="news" checked>
+              <label for="news">Новости</label>
+            </li>
+            <li>
+              <input id="gallery" type="checkbox" name="features" value="gallery">
+              <label for="gallery">Галерея</label>
+            </li>
+            <li>
+              <input id="basket" type="checkbox" name="features" value="basket">
+              <label for="basket">Корзина</label>
+            </li>
+          </ul>
+          <input class="choose-btm" type="submit" value="Показать">
+        </form>
+      </div>
+      <div>
+        <ul>
+          <li><img src="img/catalog_sedona.jpg" width="360" height="580" alt="карточка товара"></li>
+          <li><img src="img/catalog_pink.jpg" width="360" height="580" alt="карточка товара"></li>
+          <li><img src="img/catalog_barber.jpg" width="360" height="580" alt="карточка товара"></li>
+          <li><img src="img/catalog bear.jpg" width="360" height="580" alt="карточка товара"></li>
+          <li><img src="img/catalog a+.jpg" width="360" height="580" alt="карточка товара"></li>
+          <li><img src="img/catalog_kvast.jpg" width="360" height="580" alt="карточка товара"></li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer>
-    <section>
-      <h2>Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="name">Имя</label>
-          <input type="text" id="name" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="user_email">Ваш e-mail</label>
-          <input type="text" id="user_email" name="user_email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="message_text">Текст письма</label>
-          <input type="text" id="message_text" name="message_text" placeholder="В свободной форме">
-        </p>
-        <button type="submit">Отправить</button>
-      </form>
-    </section>
     <div>
-      <ul>
-        <li>
-          <img src="" width="81" height="81" alt="вк">
-        </li>
-        <li>
-          <img src="" width="81" height="81" alt="фейсбук">
-        </li>
-        <li>
-          <img src="" width="81" height="81" alt="инстаграмм">
-        </li>
-      </ul>
+      <div class="social">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </div>
       <h2>Давайте дружить, это выгодно!</h2>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+  <section class="pop-up">
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user_email">Ваш e-mail</label>
+        <input type="text" id="user_email" name="user_email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="message_text">Текст письма</label>
+        <input type="text" id="message_text" name="message_text" placeholder="В свободной форме">
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>
