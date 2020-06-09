@@ -14,9 +14,18 @@
     --prexentation-active: #E5A722;
 }
 
-body{
-    min-width: 1180px;
-    font-family: "roboto";
+.pop-up{
+    display: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3{
+    text-transform: uppercase;
 }
 
 a{
@@ -28,34 +37,62 @@ img{
     height: auto;
 }
 
+
+.page-body {
+    font-family: "Roboto", "Arial", sans-serif;
+    min-width: 1170px;
+}
+
 .main-header {
-    padding-top: 20px;
-  
     background:var(--basic);
-  }
+}
 
-.main-navigation{
+.container{
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+    
+    outline: 5px solid rgb(174, 207, 28);
+    outline-offset: -5px;
+}
+
+/*навигация*/
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 1170px;
     font-size: 16px;
-    line-height: 30px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
-.main-navigation-list{
-    list-style: none;
+.main-navigation a{
+    color: black;
+}
+  
+.site-navigation {
+    padding-top: auto;
+    width: 440px;
+    outline: 5px solid rgb(89, 0, 255);
+    outline-offset: -5px;
 }
 
-.main-navigation-list a{
-    color: var(--black);
+.site-navigation-li{
+    display: inline-block;
 }
 
-/*Эфекты нажатия и наведения на навигацию и лого*/
+/*эфекты навигации и логотипа*/
 
-.main-navigation-list a:hover,
-.main-navigation-list a:focus{
-    color: var(--link);
+.site-navigation-li a:hover,
+.site-navigation-li a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus{
+    color: var(--sites-btn);
 }
 
-.main-navigation-list a:active{
+.site-navigation-li a:active,
+.user-navigation a:active{
     mix-blend-mode: normal;
     opacity: 0.3;
 }
@@ -65,14 +102,18 @@ img{
     opacity: 0.3;
 }
 
-/*Эфекты нажатия и наведения на "заказать" и стилизация предложений*/
-
-h3{
-    text-transform: uppercase;
+.user-navigation {
+   
+    outline: 5px solid rgb(255, 0, 0);
+    outline-offset: -5px;
 }
 
-.offers li{
-    list-style: none;   
+/*index-предложения*/
+
+.offers-list{
+    display: flex; 
+    justify-content: space-between;
+    width: 1170px;
 }
 
 .offers p{
@@ -81,6 +122,7 @@ h3{
     color:var(--brown);
 }
 
+/*index-предложения-веб-сайты*/
 
 .sites-link{
     background:var(--sites-btn);
@@ -110,6 +152,8 @@ h3{
 .sites-link a:active{
     opacity: 0.3;
 }
+
+/*index-предложения-приложения*/
 
 .applications-link{
     background: var(--application-btn);
@@ -141,6 +185,8 @@ h3{
     opacity: 0.3;
 }
 
+/*index-предложения-презентации*/
+
 .presentations-link{
     background:var(--presentation-btn);
     border-radius: 3px;
@@ -171,23 +217,13 @@ h3{
     opacity: 0.3;
 }
 
-.pop-up{
-    display: none;
+/*footer*/
+
+.footer-text{
+margin-left: 140px;
 }
 
-/*иконки соц.сетей*/
-
-/*боковое меню выбора*/
-.social{
-    position: relative;
-    float: left;
-    width: 300px;
-    margin-top: 30px;
-    margin-left: 140px;
-    padding-top: 30px;
-    padding-bottom: 68px;
-}
-
+/*footer-кнопки соц.сетей*/
 .social-btn{
     display: inline-block;
     width: 63px;
@@ -231,61 +267,34 @@ h3{
     background-position: center;
 }
 
+/*catalog*/
 
-/*catalog.html*/
-.price-controls input {
-    width: 80px;
-    padding: 8px;
-    font-size: 16px;
-    text-align: center;
-    color: var(--brown);
-    background: #f1f1f1;
-    border: none;
-    border-radius: 5px;
+.filters{
+    width: 260px;
+
+    outline: 5px solid rgba(0, 255, 0, 0.3);
+    outline-offset: -5px;
 }
 
-h3{
-    font-size: 18px;
-    line-height: 30px;
+.catalog-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 140px;
+
+    outline: 5px solid rgb(190, 162, 255);
+    outline-offset: -5px;
 }
   
-label{
-    font-size: 16px;
-    line-height: 19px;
-    color: #283136;
+.catalog-item{
+    width: 358;
+    height: 578;
+    margin-bottom: 30px ;
+
+    outline: 5px solid rgb(0, 0, 0);
+    outline-offset: -5px;
 }
 
-.choose{
-    list-style: none;
+.catalog-item:nth-child(2n){
+    margin-left: 40px;
 }
 
-.choose label{
-    color: var(--brown);
-    font-size: 16px;
-    line-height: 19px;
-}
-
-.choose-btm{
-        background: var(--basic);
-        border-radius: 3px;
-        width: 260px;
-        height: 50px;
-        border: none;
-        font-size: 16px;
-        line-height: 18px;
-        color: var(--black);
-        text-transform: uppercase;
-}
-.choose-btm:hover,
-.choose-btm:focus{
-    background: #DFDFDF;
-}
-
-.choose-btm:active{
-    background: #D5D5D5;
-    box-shadow: inset 0px 3px 0px;
-}
-
-/*карточки магазина*/
-
- 

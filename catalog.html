@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,28 +9,30 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
   <header class="main-header">
-    <a class="main-logo" href="index.html">
-      <img src="img/nerds_logo.png" width="159.87" height="65.02" alt="Логотип студии Нердс">
-    </a>
+    <div class="container">
+      <nav class=" main-navigation">
+        <a class="main-logo" href="index.html">
+          <img src="img/nerds-logo.png">
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation-li"><a href="">Студия</a></li>
+          <li class="site-navigation-li"><a href="">Клиенты</a></li>
+          <li class="site-navigation-li"><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-li"><a href="">Контакты</a></li>
+        </ul>
+        <div class="user-navigation">
+          <a href="">Корзина</a>
+        </div>
+      </nav>
     </div>
-    <nav class="main-navigation">
-      <ul class="main-navigation-list">
-        <li><a href="">Студия</a></li>
-        <li><a href="">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="">Контакты</a></li>
-        <li><a href="">Корзина</a></li>
-      </ul>
-    </nav>
-    <h1>магазин готовых шаблонов</h1>
   </header>
-  <main>
-    <section>
-      <div class="choose">
-        <form action="https://echo.htmlacademy.ru" method="post">
 
+  <main>
+    <div class="container shop">
+      <div class="filters">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <p>Стоимость:</p>
           <input type="range" min="0" max="20000" step="1" value="15000">
           <div class="price-controls">
@@ -38,7 +40,7 @@
             <label class="max-price">ДО<input name="max-price" type="text" value="15000"></label>
           </div>
           <h3>Сетка</h3>
-          <ul class="choose radio-li">
+          <ul class="radio-li">
             <li>
               <input id="adaptive" type="radio" name="grid" value="adaptive" checked>
               <label for="adaptive">Адаптивная</label>
@@ -52,9 +54,8 @@
               <label for="rubber">Резиновая</label>
             </li>
           </ul>
-
           <h3>Особенности</h3>
-          <ul class="choose checkbox-li">
+          <ul class="checkbox-li">
             <li>
               <input id="slider" type="checkbox" name="features" value="slider" checked>
               <label for="slider">Слайдер</label>
@@ -79,27 +80,27 @@
           <input class="choose-btm" type="submit" value="Показать">
         </form>
       </div>
-      <div>
-        <ul>
-          <li><img src="img/catalog_sedona.jpg" width="360" height="580" alt="карточка товара"></li>
-          <li><img src="img/catalog_pink.jpg" width="360" height="580" alt="карточка товара"></li>
-          <li><img src="img/catalog_barber.jpg" width="360" height="580" alt="карточка товара"></li>
-          <li><img src="img/catalog bear.jpg" width="360" height="580" alt="карточка товара"></li>
-          <li><img src="img/catalog a+.jpg" width="360" height="580" alt="карточка товара"></li>
-          <li><img src="img/catalog_kvast.jpg" width="360" height="580" alt="карточка товара"></li>
-        </ul>
-      </div>
-    </section>
+      <ul class="catalog-list">
+        <li class="catalog-item"><img src="img/catalog-sedona.jpg" width="360" height="580" alt="карточка товара"></li>
+        <li class="catalog-item"><img src="img/catalog-pink.jpg" width="360" height="580" alt="карточка товара"></li>
+        <li class="catalog-item"><img src="img/catalog-barber.jpg" width="360" height="580" alt="карточка товара"></li>
+        <li class="catalog-item"><img src="img/catalog-bear.jpg" width="360" height="580" alt="карточка товара"></li>
+        <li class="catalog-item"><img src="img/catalog-a+.jpg" width="360" height="580" alt="карточка товара"></li>
+        <li class="catalog-item"><img src="img/catalog-kvast.jpg" width="360" height="580" alt="карточка товара"></li>
+      </ul>
+    </div>
   </main>
-  <footer>
-    <div>
-      <div class="social">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+  <footer class="main-footer">
+    <div class="container">
+      <ul class="social">
+        <li class="social-btn social-btn-vk" href="#">Вконтакте</li>
+        <li class="social-btn social-btn-fb" href="#">Фейсбук</li>
+        <li class="social-btn social-btn-inst" href="#">Инстаграм</li>
+      </ul>
+      <div class="footer-text">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
   <section class="pop-up">
