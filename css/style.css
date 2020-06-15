@@ -24,8 +24,19 @@ ul{
     padding: 0px;
 }
 
+h1{
+    font-size: 45px;
+}
+
 h3{
     text-transform: uppercase;
+    font-size: 16px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--brown)
 }
 
 a{
@@ -37,6 +48,14 @@ img{
     height: auto;
 }
 
+hr{
+background:var(--basic);
+width: 1158px;
+height: 2px;
+left: 140px;
+top: 1052px;
+}
+
 
 .page-body {
     font-family: "Roboto", "Arial", sans-serif;
@@ -45,15 +64,14 @@ img{
 
 .main-header {
     background:var(--basic);
+    outline: 5px solid rgb(255, 0, 0);
+    outline-offset: -5px; 
 }
 
 .container{
     display: flex;
     width: 1170px;
     margin: 0 auto;
-    
-    outline: 5px solid rgb(174, 207, 28);
-    outline-offset: -5px;
 }
 
 /*навигация*/
@@ -74,8 +92,6 @@ img{
 .site-navigation {
     padding-top: auto;
     width: 440px;
-    outline: 5px solid rgb(89, 0, 255);
-    outline-offset: -5px;
 }
 
 .site-navigation-li{
@@ -103,23 +119,19 @@ img{
 }
 
 .user-navigation {
-   
-    outline: 5px solid rgb(255, 0, 0);
-    outline-offset: -5px;
+    
 }
 
 /*index-предложения*/
+.offers{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
 
 .offers-list{
     display: flex; 
     justify-content: space-between;
     width: 1170px;
-}
-
-.offers p{
-    font-size: 16px;
-    line-height: 24px; 
-    color:var(--brown);
 }
 
 /*index-предложения-веб-сайты*/
@@ -217,10 +229,97 @@ img{
     opacity: 0.3;
 }
 
+.advantage{
+    margin-top: 39px;
+    margin-bottom: 75px;
+}
+
+.advantage-h3{
+    text-align: center;
+}
+
+.advantage-left{
+    width: 660px;
+}
+
+.advantage-right{
+    margin-left: 150px;
+    width: 360px;
+}
+
+.advantage-number{
+    font-size: 45px;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.advantage-percent{
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.advantage-text{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--brown);
+}
+
+.advantage-right-li{
+    display: inline-block;
+}
+
+.advantage-right-li:nth-child(2){
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.partners{
+    margin-top: 60px;
+    margin-bottom: 45px;
+}
+
+.partners-list{
+    display: flex;
+    flex-grow: 1;
+}
+
+
+.partners-item{
+    margin: auto;
+    padding: 0px;
+    opacity: 0.2;
+}
+
+.partners-item:hover,
+.partners-item:focus{
+    opacity: 1;
+}
+
+.partners-item:active{
+    opacity: 0.1;
+}
+
+.map{
+    margin-top: 80px;
+}
+
+.adres{
+    position: relative;
+    top: -350px;
+    background-color: var(--white);
+    width: 319;
+    height: 308;
+}
+
+.adres-text{
+    margin: 50px;
+}
+
 /*footer*/
 
 .footer-text{
-margin-left: 140px;
+    margin: auto;
 }
 
 /*footer-кнопки соц.сетей*/
@@ -268,6 +367,11 @@ margin-left: 140px;
 }
 
 /*catalog*/
+
+.shop{
+    outline: 5px solid rgb(255, 0, 0);
+    outline-offset: -5px;
+}
 
 .filters{
     width: 260px;
