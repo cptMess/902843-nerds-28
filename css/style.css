@@ -14,9 +14,6 @@
     --prexentation-active: #E5A722;
 }
 
-.pop-up{
-    display: none;
-}
 
 ul{
     list-style: none;
@@ -39,15 +36,6 @@ img{
     max-width: 100%;
     height: auto;
 }
-
-hr{
-background:var(--basic);
-width: 1158px;
-height: 2px;
-left: 140px;
-top: 1052px;
-}
-
 
 .page-body {
     font-family: "Roboto", "Arial", sans-serif;
