@@ -82,6 +82,7 @@ img{
     padding-right: 245px;
     list-style: none;
     text-transform: uppercase;
+    font-weight: 500;
     justify-content: start;
     flex-wrap: wrap;
 }
@@ -101,6 +102,7 @@ img{
     padding: 0;
     list-style: none;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .header-cart-nav li{
@@ -115,7 +117,7 @@ img{
     width: 15px;
     height: 15px;
     content: '';
-    background-image: url(../img/icon/cart-icon.svg);
+    background-image: url(../img/cart-icon.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -743,6 +745,54 @@ img{
     color: #444;
 }
 
+/*модалка*/
+
+@keyframes bounce{
+    0%{
+        transform: translateY(-2000px);
+        will-change: transform;
+    }
+
+    70%{
+        transform: translateY(30px);
+        will-change: transform;
+    }
+
+    90%{
+        transform: translateY(-10px);
+        will-change: transform;
+    }
+
+    100%{
+        transform: translateY(0);
+        will-change: transform;
+    }
+}
+
+@keyframes shake{
+    0%,
+    100%{
+        transform: translateX(0);
+        will-change: transform;
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90%{
+        transform: translateX(-10px);
+        will-change: transform;
+    }
+
+    20%,
+    40%,
+    60%,
+    80%{
+        transform: translateX(10px);
+        will-change: transform;
+    }
+}
 
 .modal{
     position: fixed;
@@ -763,7 +813,7 @@ img{
 
 .modal-show{
     display: block;
-    animation: bounce .6s;
+    animation: bounce 0.6s;
 }
 
 .modal-error{
@@ -841,7 +891,7 @@ img{
 
 .send-us-form input[type=email]:focus,
 .send-us-form input[type=text]:focus,
-send-us-form textarea:focus{
+.send-us-form textarea:focus{
     color: var(--black);
     border: 2px solid var(--black);
 }
@@ -854,7 +904,7 @@ send-us-form textarea:focus{
 
 .send-us-form input[type=email]:invalid{
     color: var(--sites-focus);
-    border-color: #var(--sites-focus);
+    border-color: var(--sites-focus);
 }
 
 .send-us-form-button{
@@ -933,7 +983,7 @@ send-us-form textarea:focus{
 .catalog-sorting h2{
     font-family: Roboto,Arial,sans-serif;
     font-size: 18px;
-    font-weight: 700px;
+    font-weight: 700;
     letter-spacing: normal;
     text-transform: uppercase;
 }
@@ -1133,7 +1183,7 @@ send-us-form textarea:focus{
 
 .filter-item legend{
     font-size: 18px;
-    font-weight: 700px;
+    font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
 }
@@ -1212,7 +1262,7 @@ send-us-form textarea:focus{
 }
 
 .pagination-list{
-    font-weight: 500px;
+    font-weight: 500;
     display: flex;
     max-width: 760px;
     margin: 0;
